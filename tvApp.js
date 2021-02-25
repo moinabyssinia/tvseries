@@ -41,7 +41,7 @@ const fetchMoviePoster = async function(userInput){
     try{
         //customizing the request with parameters
         const config = {params: {q: userInput}, headers: {}}
-        const tvDat = await axios.get(`http://api.tvmaze.com/search/shows`, config)
+        const tvDat = await axios.get(`https://api.tvmaze.com/search/shows`, config)
         console.log(tvDat.data);
 
         let posterArray = [];
